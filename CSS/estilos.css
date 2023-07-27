@@ -1,0 +1,461 @@
+/* selector de tipografias externas */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Trocchi&display=swap');
+
+/*tipografias*/
+@font-face {
+    font-family: 'fuente-principal';
+    src: url('../Assets/Fuentes/GraphikRegular.otf');
+}
+/*selecrtor de tipo reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*Selector de tipo ID*/
+#barra-navegacion{
+    background-color: greenyellow;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px 20px;    
+}
+
+#encabezado-home{   
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px
+}
+/*selector de tipo clase*/
+.estilo-link{
+
+    
+}
+.font-main{
+font-family:'fuente-principal' 
+}
+
+/*selector de etiqueta*/
+img{width: 40%;}
+
+
+  a:link, a:visited{
+    color: #4e149b;
+    outline: none;
+    text-decoration:none
+  }
+  
+
+  a:focus {
+    background: #b915a3;
+  }
+  
+  a:hover {
+    font-size: 19px;
+    border-bottom: 3px solid #000;
+    color: #ae34cc;
+  }
+  
+  a:active {
+    background: #616161;
+    color: #ffffff;
+    padding: 10px;
+  }  
+  .grupo{
+    width: 500px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 3px solid #00cdf1;
+    border-radius: 8px;
+    font-size: 20px;
+  }
+
+  /* .lista2 :nth-child(2){
+    background-color: #00cdf1;
+    color: #616161;
+    font-size: 20px;
+  } */
+  /* .lista2 :nth-last-child(odd){
+    background-color: #00cdf1;
+    color: #616161;
+    font-size: 20px;
+  } */
+  .lista2 :nth-child(even){
+    background-color: #00cdf1;
+    color: #616161;
+    font-size: 20px;
+  }
+
+  /*firts and last of type*/
+  .elementos p:first-of-type{
+    background-color: #616161;
+    text-transform: uppercase;
+    color: #00cdf1;
+  }
+
+  .elementos p:last-of-type{
+    background-color: #82da3b;
+    text-transform: uppercase;
+    color: #be20dd;
+  }
+
+  .elementos div:first-of-type{
+    text-transform: capitalize;
+    color: #dd2020;
+  }
+  /*first and last child*/
+  .parrafos p:first-child{
+    background-color: #157e91;
+    color: #ccc;
+  }
+  .parrafos p:last-child{
+    background-color: #911545;
+    color: #ccc;
+  }
+
+  /*metodologia BEM*/
+  .contenedor{
+    max-width: 500px;
+    width: 100px;
+    margin: 20px;
+  }
+/*bloque 1*/
+.tarjeta{
+  width: 600px;
+  border: 5px double;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.tarjeta__imagen{
+  width: 60%;  
+}
+.tarjeta__textos{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color:#000;
+}
+.tarjeta__enlace{
+  color: #dd2020;
+  padding: 10px auto;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.tarjeta__parrafo{
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.boton{
+  background: #000;
+  display: block;
+  width: 100px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 100px;
+  color: #ccc;
+}
+/*modificador*/
+.boton--alternativo{
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: 'Roboto';
+  border-radius: 0;
+  background-color: #00cdf1;
+  color: #000;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    font-family:'fuente-principal';
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+/*boxmodeling*/
+.elemento-bloque{
+    display: inline-block;
+    border: 5px solid #b42ea2;
+    /* width: 50%;
+    height: 250px; */
+    padding: 20px 30px 40px 50px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.elemento-lienea{
+    display: inline-block;
+    border: 5px solid #911545;
+    margin-top: 25px;
+}
+.flex-conteiner{
+  /*activamos flex*/
+  display: flex;
+  /*definimos cual va s ser nuestro main axis y cual , seras nuestra fila o columna*/
+  flex-direction: row;
+  /*dispone los elementos flexibles en el eje principal*/
+  /*justify-content: flex-start;*/
+  /*dispone los elementos flexibles en el eje secundario*/
+  flex-wrap: wrap;
+  align-content: space-evenly;
+
+
+
+
+
+  
+  border: 5px solid #000;
+  background-color: #ccc;
+  padding: 20px;
+  margin: 20px;
+  height: 800px;
+}
+.caja{
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background-color: #2c0eb3;
+  margin: 5px;
+
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.c1{
+  background-color: #82da3b;
+  /*defino el oreden de aparicion*/
+  order: 2;
+  /*derechi a crecer*/
+  flex-grow: 5;
+}
+.c2{
+  background-color: #4e149b;
+  order: 3;
+  flex-grow: 1;
+}
+
+.c3{
+  background-color: #b42ea2;
+  order: 1;
+  flex-grow: 1;
+}
+
+
+/*CSS GRID PRACTICA*/
+
+.cabecera{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  /*tipografia*/
+  font-family: sans-serif;
+  font-size: 50px;
+
+  /*boxmodeling*/
+  padding: 20px 0;
+
+}
+
+.grid-container{
+/*box modeling*/
+  width: 90%;
+  max-width: 1000px;
+  border: 10px solid #bbff3d;
+  border-radius: 8px;
+  margin: auto;
+  background-color: #bbff3d;
+  
+
+  /*tipografia*/
+  font-size: 50px;
+  text-align: center;
+
+  /*activar grid*/
+  display: grid;
+  /*definimos la cantidad de columnas y el ancho*/
+  grid-template-columns: repeat(3,1fr);
+  /*definir la cantidad de filas y el alto*/
+  grid-template-rows: repeat(3,1fr);
+  gap: 10px; 
+}
+.titulo-discos{
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+.grid-container > div{
+  /*box modeling*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: ;
+  padding: 20px;
+  padding: 20px;
+  background-color: rgb(218, 135, 103);
+  color: #ffffff;
+}
+/*GRID AREAS TEMPLATE*/
+.contenedor-grid{
+  /*tipografia*/
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+
+  /*box modeling*/
+  width: 90%;
+  height: 600px;
+  margin: 40px auto;
+  border: 5px dashed #bbff3d;
+
+  /*ACtivamos GRID*/
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(5,1fr);
+  gap: 10px;
+
+  /*GRID AREAS*/
+  grid-template-areas: 
+  "header header header"
+  "nav nav nav"
+  "main main aside"
+  "main main aside"
+  "footer footer footer"
+}
+.items{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.item1{
+  background-color: rgb(74, 211, 142);
+  /* grid-column: 1/3;
+  grid-row: 1/4; */
+  grid-area: header;
+}
+.item2{
+  background-color: #2c0eb3;
+  grid-area: nav;
+}
+.item3{
+  background-color: burlywood;
+  grid-area: main;
+}
+.item4{
+  background-color: darkorchid;
+  grid-area: aside;
+}
+.item5{
+  background-color:aqua;
+  grid-area: footer;
+}
+.titulo-tickets{
+  font-family: 'Roboto';
+  font-size: 25px;
+  color:darkcyan;
+  font-weight: 600;
+  text-align: center;
+}
+
+/*navbar con flexbox*/
+
+.icon-fito{
+  width: 100px;
+  border-radius: 50%;
+}
+nav{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a{
+  font-family: 'Roboto' , Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+/*Mediaqueries*/ /*siempre al final del CSS*/
+
+@media screen and (max-width: 480px){
+  .titulo-tickets{
+    font-family: 'fuente-principal' ;
+    font-size: 18px;
+    color:rgb(63, 139, 0);
+    font-weight: bold;
+    text-align: ;
+    border: 2px solid #000;  
+  }
+  .contenedor-grid{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+  
+    /*box modeling*/
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+    border: 5px groove #000;
+  
+    /*ACtivamos GRID*/
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5,auto);
+    gap: 10px;
+  
+    /*GRID AREAS*/
+    grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "nav"
+    "footer"
+    ;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  .titulo-tickets{
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    color:#8b0035;
+    font-weight: bold;
+    text-align: ;
+    border: 2px groove #000;
+    margin-left: 20px;
+    margin-top: 20px;
+
+  }
+    /*Modificar la disposicion de nuestro grid areas para este breackpoint*/
+}
+
+@media screen and (min-width: 961px) and (max-width: 1328px) {
+  .titulo-tickets{
+    /* OCULTAR PANTALLA - display: none; */
+    font-family:'Roboto';
+    font-size: 30px;
+    color:#23d6ee;
+    font-weight: bold;
+    text-align: ;
+    border: 3px dotted #000;
+    margin-left: 20px;
+    margin-top: 20px;
+
+  }
+}

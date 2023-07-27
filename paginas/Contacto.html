@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../Assets/iconos/piano.png" type="image/x-icon">
+    <!--CSS-->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <title>Fito Paez - Contacto</title>
+
+</head>
+<body style="background-color: #a992e0;">
+
+    <nav id="barra-navegacion">
+        <a href="../index.html">
+            <img class="icon-fito" src="../Assets/iconos/piano.png" alt="icon-fito">
+        </a>
+
+        <a href="../index.html">home</a>
+            
+        <a href="../paginas/Biografia.html">biografia</a>
+                
+        <a target="_blank" href="https://es.wikipedia.org/wiki/Anexo:Discograf%C3%ADa_de_Fito_P%C3%A1ez">discografia</a>
+
+        <a href="../paginas/Tickets.html">tickes</a>
+
+        <a href="../paginas/Contacto.html">Contancto</a>
+    
+    </nav>
+
+
+    <main>
+        <form action="procesar.php" method="get">
+            <!-- input nombre -->
+            <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="" placeholder="Juan">
+            </div>
+            <!-- input apellido -->
+            <div>
+                <label for="Apellido">Apellido</label>
+                <input type="text" name="Apellido" id="" placeholder="Perez">
+            </div>
+                        <!-- input email-->
+            <div>
+                <label for="email">Correo Electronico</label>
+                <input type="email" name="email" id="" placeholder="hola@servidor.com">
+            </div>
+                                    <!-- input pass -->
+            <div>
+                <label for="pass">Contraseña</label>
+                <input type="password" name="pass" id="" required">
+            </div>
+            
+            <!-- Radio -->
+            <h3>Seleccione su género: </h3>
+            <label for="genero">Femenino</label>
+            <input type="radio" name="genero" value="Femenino">
+
+            <label for="genero">Masculino</label>
+            <input type="radio" name="genero" value="Masculino">
+
+            <label for="genero">Prefiero no decirlo</label>
+            <input type="radio" name="genero" value="no-decirlo">
+
+            <!-- checkbox -->
+            <h3>Que discos quieres escuchar</h3>
+            <label for="disco">El amor despues del amor</label>
+            <input type="checkbox" name="disco" value="el-amor">
+
+            <label for="disco">Circo beat</label>
+            <input type="checkbox" name="disco" value="circo-beat">
+
+            <label for="disco">Giros</label>
+            <input type="checkbox" name="disco" value="giros">
+
+            <h3>Deja tu mensaje</h3>
+            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar Formulario</button>
+            
+
+        </form>            
+    </main>
+</body>
+</html>
